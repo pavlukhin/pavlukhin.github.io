@@ -68,7 +68,7 @@
     });
 
     function doDraft(candidatesStr) {
-        const candidates = candidatesStr.split(/\s+/);
+        const candidates = candidatesStr.split(/[ ,;:]+/);
         const draft = shuffle(candidates);
         return draft.join(" ");
     }
